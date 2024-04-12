@@ -22,7 +22,8 @@ Overall This Proposed does 2 processes :
 
 Note : Reviews with no comments were replaced with "title" values and the final dataset after SA has the merged comments (both love and hate) - This was done to reduce bias as this is being given as the input to an LLM.
 
-<img width="849" alt="Screenshot 2024-04-13 at 12 07 26 AM" src="https://github.com/YashaswiniIppili/AI_Avengers-G2_PS2/assets/107344920/e2a4b81d-1974-4181-a775-aba518b693fa">
+<img width="725" alt="Screenshot 2024-04-13 at 12 18 17 AM" src="https://github.com/YashaswiniIppili/AI_Avengers-G2_PS2/assets/107344920/385e12a9-63f3-4b6a-9f8f-e80b120f1596">
+
 
 
 # How to Use 
@@ -46,7 +47,7 @@ Note : Reviews with no comments were replaced with "title" values and the final 
 
    ```
 3. Convert the json file you got into a csv file.
-4. Open a Colab Notebook with both the notebooks in two tabs.
+4. Open two Colab Notebooks with both the notebooks G2NLP.ipynb and G2NLP.ipynb in two tabs.
 5. Run all the cells in the G2NLP.ipynb file, this file will perform the sentiment analysis and the required preprocessing of the data for the LLM part of the project, **DO NOT FORGET TO CHANGE THE PATH OF THE DATASET TO THE EXTRACTED DATASET**
 6. You will be able to see the Top 10 likes and disklikes followed by the formation of the **final.csv** dataset.
    
