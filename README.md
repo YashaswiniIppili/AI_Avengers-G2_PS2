@@ -14,19 +14,19 @@ https://data.g2.com/api/docs#reviews-list - You can use this batch API to fetch 
 2. **Conversion to CSV:** The JSON file is converted into a CSV file for easier processing and analysis.<br>
 3. **Sentiment Analysis:** Sentiment analysis is applied to the data to identify top positive and negative comments. This helps in understanding customer preferences and areas for improvement.<br>
 4. **Machine Learning Model Training:** The sentiment analysis results and original data are sent to a Language Model (LLM) for training. This step enhances the accuracy of predictions by leveraging machine learning.
-5. **Interactive Web Application:** Gradio is utilized to create an interactive web chat application interface. This interface enables users to perform various analyses on the provided data swiftly and accurately
+5. **Interactive Web Application:** Gradio is utilized to create an interactive web chat application interface. This interface enables users to perform analysis on the provided data swiftly and accurately.
 
 Overall This Proposed does 2 processes :
-1) Sentiment analysis using NLP on the data and reviews provided
-2) Sending the Sentiment analysis alone with the Review data to an LLM to be trained upon.
+1) Sentiment Analysis (SA) using NLP (Both VADER and RoBERTa) on the data and reviews provided.
+2) Sending the SA data to an LLM as input.
 
-This will make the model way accurate than just training the model on the data or the reviews as now it knows the the top positve comments and top negative comments which it can use to decide the customer likes and customer asks with great accuracy.
+Note : Reviews with no comments were replaced with "title" values and the final dataset after SA has the merged comments (both love and hate) - This was done to reduce bias as this is being given as the input to an LLM.
 
 <img width="849" alt="Screenshot 2024-04-13 at 12 07 26 AM" src="https://github.com/YashaswiniIppili/AI_Avengers-G2_PS2/assets/107344920/e2a4b81d-1974-4181-a775-aba518b693fa">
 
 
 # How to Use 
-1. To use the repo first clone the repo <br>
+1. Clone the repo <br>
     ```
 
     git clone https://github.com/YashaswiniIppili/AI_Avengers-G2_PS2.git
@@ -46,21 +46,20 @@ This will make the model way accurate than just training the model on the data o
 
    ```
 3. Convert the json file you got into a csv file.
-4. After you have the dataset Open a Jupiter Notebook and open both the ipynb files provided in 2 different notebooks
-5. Run all the cells in the G2NLP.ipynb file, this file will do the sentiment analysis and the Preprocessing of the data for the LLM part of the project, **DO NOT FORGET TO CHANGE THE PATH OF THE DATASET TO THE EXTRACTED DATASET**
-6. After running the G2NLP.ipynb you'll have a new dataset called merged.csv, and the sentimemt analysis done on the data also printing the top positive comments and top negatove comments
+4. Open a Colab Notebook with both the notebooks in two tabs.
+5. Run all the cells in the G2NLP.ipynb file, this file will perform the sentiment analysis and the required preprocessing of the data for the LLM part of the project, **DO NOT FORGET TO CHANGE THE PATH OF THE DATASET TO THE EXTRACTED DATASET**
+6. You will be able to see the Top 10 likes and disklikes followed by the formation of the **final.csv** dataset.
    
   ![image](https://github.com/YashaswiniIppili/AI_Avengers-G2_PS2/assets/107344920/31ac614a-6815-4158-8062-bf90b5c20b0f)
 
   ![image](https://github.com/YashaswiniIppili/AI_Avengers-G2_PS2/assets/107344920/f3991361-0e83-4708-bb1e-e858dc4297e7)
 
 
-7. Now run all the cells of G2LLM.ipynb with the **dataset path as the path of merged.csv** on your local computer
-8. Open the link the gradio provides to go the interactive AI powered chat bot.
-9. We are using Meta-LLAMA-2-7b Model as our LLM model with sentence transformers to compute the embeddings (dense vector representations) for sentences.
+7. Now run all the cells of G2LLM.ipynb with the **dataset path as the directory's path of final.csv** on your local computer
+8. Open the link the Gradio provides, to go the interactive AI powered chat bot.
+9. We are using **Meta-LLAMA-2-7b Model** as our LLM model with sentence transformers to compute the embeddings (dense vector representations) for sentences.
 10. Now let the model train on the data provided (this process speed will differ based on the computational power of the local computer)
 
-    Now the mode provides results like this about the Reviews data, making customer review analysis Easier and Faster 
     
 ![image](https://github.com/YashaswiniIppili/AI_Avengers-G2_PS2/assets/107344920/75755d99-dabb-4c86-8868-6afeab79f6a8)
 
