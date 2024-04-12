@@ -49,7 +49,7 @@ Note : Reviews with no comments were replaced with "title" values and the final 
 3. Convert the json file you got into a csv file.
 4. Open two Colab Notebooks with both the notebooks G2NLP.ipynb and G2NLP.ipynb in two tabs.
 5. Run all the cells in the G2NLP.ipynb file, this file will perform the sentiment analysis and the required preprocessing of the data for the LLM part of the project, **DO NOT FORGET TO CHANGE THE PATH OF THE DATASET TO THE EXTRACTED DATASET**
-6. You will be able to see the Top 10 likes and disklikes followed by the formation of the **final.csv** dataset.
+6. You will be able to see the Top 10 likes and dislikes followed by the formation of the **final.csv** dataset.
    
   ![image](https://github.com/YashaswiniIppili/AI_Avengers-G2_PS2/assets/107344920/31ac614a-6815-4158-8062-bf90b5c20b0f)
 
