@@ -67,4 +67,5 @@ Note : Reviews with no comments were replaced with "title" values and the final 
 ![image](https://github.com/YashaswiniIppili/AI_Avengers-G2_PS2/assets/107344920/acb9e0b3-b8f7-4f93-a751-605146da013c)
 
     
-
+# Contact
+If any doubts Arise ot persist feel free to contact us at revanthreddy0403@gmail.com, yashaswini.ippili@gmail.com
