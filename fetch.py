@@ -2,7 +2,7 @@ import requests
 import json
 
 url = "https://data.g2.com/api/v1/survey-responses"
-secret_token = "c5ec205a957353f5d655dca1529692f11dc1aab6e70b62563f6a475982ad99ad"
+secret_token = "API-KEY"  #Apply your api key in between " "
 
 
 def fetch_data():
