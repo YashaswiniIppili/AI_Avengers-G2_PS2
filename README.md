@@ -20,7 +20,7 @@ Overall This Proposed does 2 processes :
 1) Sentiment analysis using NLP on the data and reviews provided
 2) Sending the Sentiment analysis alone with the Review data to an LLM to be trained upon.
 
-This will make the model way accurate than just training the model on the data or the reviews as now it knows the the top positve comments and top negative comments which it can decide the customer likes and customer asks with great accuracy.
+This will make the model way accurate than just training the model on the data or the reviews as now it knows the the top positve comments and top negative comments which it can use to decide the customer likes and customer asks with great accuracy.
 
 <img width="849" alt="Screenshot 2024-04-13 at 12 07 26 AM" src="https://github.com/YashaswiniIppili/AI_Avengers-G2_PS2/assets/107344920/e2a4b81d-1974-4181-a775-aba518b693fa">
 
